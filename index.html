@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-202-korridor">
+        <li class="text">202 Korridor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-206_trapperom_tak">
+        <li class="text">206_Trapperom_tak</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-206_trapperom_u">
+        <li class="text">206_Trapperom_U</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-208_lakkrom">
+        <li class="text">208_Lakkrom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-210_trapperom_kjeller">
+        <li class="text">210_Trapperom_kjeller</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-211">
+        <li class="text">211</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-213_el_skap">
+        <li class="text">213_EL_skap</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-213_ved_trapp">
+        <li class="text">213_ved_trapp</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-217_malerikonservering">
+        <li class="text">217_Malerikonservering</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-218_kontor">
+        <li class="text">218_Kontor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-219">
+        <li class="text">219</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-k201a">
+        <li class="text">K201A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-k202">
+        <li class="text">K202</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-k202a">
+        <li class="text">K202A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-k204">
+        <li class="text">K204</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-k205">
+        <li class="text">K205</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-k209b">
+        <li class="text">K209B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-k211_fotostudio">
+        <li class="text">K211_Fotostudio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-k212">
+        <li class="text">K212</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-k2029">
+        <li class="text">K2029</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-u201">
+        <li class="text">U201</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-u205">
+        <li class="text">U205</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-u207">
+        <li class="text">U207</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-u207_2">
+        <li class="text">U207_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-u207_3">
+        <li class="text">U207_3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-k201a_2">
+        <li class="text">K201A_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-tak1">
+        <li class="text">Tak1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-tak2">
+        <li class="text">Tak2</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
